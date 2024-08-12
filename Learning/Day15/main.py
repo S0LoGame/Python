@@ -46,12 +46,10 @@ def check_resources(drink):
 
 #TODO: 3. Process coins
 def process_coins():
-    print("Please insert coins.")
+    print("Please insert money.")
+    dollars = int(input("How many dollars?: "))
     quarters = int(input("How many quarters?: "))
-    dimes = int(input("How many dimes?: "))
-    nickles = int(input("How many nickles?: "))
-    pennies = int(input("How many pennies?: "))
-    total = quarters * 0.25 + dimes * 0.1 + nickles * 0.05 + pennies * 0.01
+    total = dollars * 1 + quarters * 0.25 
     return total
 
 #TODO: 4. Check transaction
